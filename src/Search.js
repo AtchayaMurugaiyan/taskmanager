@@ -9,6 +9,7 @@ const Search = ({search, setSearch}) => {
     // inputRef.current.focus();
     setSearch('');
     document.getElementById("add-listitem").focus();
+    
   };
   return (
     <form className='flex'
@@ -20,6 +21,7 @@ const Search = ({search, setSearch}) => {
             role='searchbox'
             value={search}
             // ref={ref}
+            onBlur={(e)=>{setSearch(e.target.value='')}}
             onChange={(e)=>{setSearch(e.target.value)}}
         />
         <button

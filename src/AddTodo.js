@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { FaPlus } from "react-icons/fa";
 
-const AddTodo = ({ input, setInput, handleSubmit }) => {
+const AddTodo = ({ input, setInput, handleSubmit, setSearch }) => {
   const inputRef = useRef();
   return (
     <form className='flex' onSubmit={handleSubmit}>
